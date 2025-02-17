@@ -7,7 +7,7 @@ import random
 server = Flask(__name__)
 
 def send_callback_message(start,end,callback_url):
-    logic_response = requests.post('https://f73lse2ty7.execute-api.ap-northeast-2.amazonaws.com/smt_backend_python_logic', json={"start": start,"end": end})
+    logic_response = requests.post('main.py api의 주소', json={"start": start,"end": end})
     logic_response_data = logic_response.json()
     print(logic_response_data)
     final_route = logic_response_data['result']

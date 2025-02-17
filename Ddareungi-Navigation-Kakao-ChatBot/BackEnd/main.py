@@ -342,7 +342,7 @@ def make_listcard_list(final_route):
 
     return(listcard)
 
-t_map_api_key = 'n8zsIWsyk34hbmYfX4PzbjN4CKizkXD3FdvGi5ig'
+t_map_api_key = '-'
 
 def t_map_header():
     headers = {
@@ -395,8 +395,8 @@ def get_x_y_ep(keyword):
         return(0,0)
 
 def find_Ddareuungi_station(lat, lon, radius=1):
-    Ddareuungi_url_1 = 'http://openapi.seoul.go.kr:8088/545666646e6169643833456d794e4d/json/bikeList/1/1000/'
-    Ddareuungi_url_2 = 'http://openapi.seoul.go.kr:8088/545666646e6169643833456d794e4d/json/bikeList/1001/2000/'
+    Ddareuungi_url_1 = 'http://openapi.seoul.go.kr:-/json/bikeList/1/1000/'
+    Ddareuungi_url_2 = 'http://openapi.seoul.go.kr:-/json/bikeList/1001/2000/'
 
     Ddareuungi_response_1 = requests.get(Ddareuungi_url_1)
     Ddareuungi_response_2 = requests.get(Ddareuungi_url_2)
